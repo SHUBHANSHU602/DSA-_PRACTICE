@@ -178,19 +178,103 @@
 // // Q7. Range sum query
 // // Given an array and multiple queries (i, j), find sum of subarray from index i to j
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+// 	int arr[4]={1,2,3,4};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     int m,j, sum=0;
+//     cout<<"enter starting and endind index respectively";
+//     cin>>m;
+//     cin>>j;
+//     for (int i = m; i <= j; i++)
+//     {   
+//         sum=sum+arr[i];
+//     }  
+//    cout<<sum;
+// }
+
+//Print subarrays of a given size k
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//      int k=3;                                      // use three loops only where all subarray is printed
+//    int arr[8]={0,5,6,7,4,0,4,0};
+//    int n = sizeof(arr)/sizeof(arr[0]);
+//    for(int i=0; i<n-k; i++){
+//       for (int j = i; j <i+k; j++)
+//       {
+//        cout<< arr[j];
+       
+//       }
+//       cout<<endl;
+//      }
+
+// }
+
+// Q8. Count subarrays with given sum K
+// Given an array and integer K, count number of subarrays whose sum equals K.
+
 #include <bits/stdc++.h>
 using namespace std;
+int main(){
+   int k=8;
+   int arr[7]={0,5,6,7,4,0,4};
+   int n = sizeof(arr)/sizeof(arr[0]);
+   int count =0;
+   for(int i=0; i<n; i++){
+      int sum=0;
+      for (int j = i; j < n; j++)
+      {
+        sum+=arr[j];
+      }
+      if(sum==k){
+         count++;
+      }
+   }
+   cout<<count;
 
-int main() {
-	int arr[4]={1,2,3,4};
-    int n=sizeof(arr)/sizeof(arr[0]);
-    int m,j, sum=0;
-    cout<<"enter starting and endind index respectively";
-    cin>>m;
-    cin>>j;
-    for (int i = m; i <= j; i++)
-    {   
-        sum=sum+arr[i];
-    }  
-   cout<<sum;
+}
+
+// Q9. Maximum subarray sum 
+// Find the maximum subarray sum.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+   int arr[7]={0,5,6,7,0,4,0};
+   int maxSum = INT_MIN;
+
+   int n = sizeof(arr)/sizeof(arr[0]);
+   for(int i=0; i<n; i++){
+      int sum =0;
+      for (int j = i; j < n; j++)
+      {
+        sum+=arr[j];
+         maxSum = max(maxSum,sum);
+      }
+   }
+   cout<<maxSum;
+
+}
+// Q9. Maximum subarray sum of size k
+// Find the maximum subarray sum of size k.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+   int arr[7]={0,5,6,7,0,4,0};
+   int maxSum = INT_MIN;
+   int k=3;
+   int n = sizeof(arr)/sizeof(arr[0]);
+   for(int i=0; i<n-k; i++){
+      int sum =0;
+      for (int j = i; j < i+k; j++)
+      {
+        sum+=arr[j];
+      }
+       maxSum = max(maxSum,sum);  // here we took maxSum=max() outside of first loop because hame ek i se ek hi value chahiye and in about question i se saare value chahiye isiliye ander liya
+   }
+   cout<<maxSum;
 }
