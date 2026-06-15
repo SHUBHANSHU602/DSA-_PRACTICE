@@ -70,6 +70,18 @@
 // 120
 
 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int fact(int N){
+//     if(N==1){
+//         return 1;
+//     }
+//         return N*fact(N-1);
+// }
+// int main(){
+//     cout<<"here your answr:->"<<fact(5);
+// }
 
 
 // Q5. Print Array Elements
