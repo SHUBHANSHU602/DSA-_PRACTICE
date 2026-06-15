@@ -47,7 +47,20 @@
 // Output:
 // 15
 
+// #include<bits/stdc++.h>
+// using namespace std;
 
+// int sum(int N){
+//     if(N==1){
+//         return 1;
+//     }
+//         return N+sum(N-1);
+//      }
+
+// int main(){
+//     cout<<"here your answr:->"<<sum(5);
+    
+// }
 
 // Q4. Factorial of N
 // Write a recursive function:
