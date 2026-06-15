@@ -118,6 +118,20 @@
 // Output:
 // 10
 
+// #include<bits/stdc++.h>
+// using namespace std;
+//  int  sum(int arr[] , int n , int index){
+//     if(index==n){
+//         return 0;
+//     }
+//     return arr[index]+sum(arr , n , index+1 );
+// }
+// int main(){
+//     cout<<"here your answr:->";
+//     int arr[] = {10, 20, 30, 40, 50};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     cout<< sum(arr ,n,0);
+// }
 
 
 
