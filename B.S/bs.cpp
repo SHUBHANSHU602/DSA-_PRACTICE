@@ -19,6 +19,26 @@
 
 // Q2. Print 1 to N
 
+// Write a recursive function:
+// Input: n = 5
+// Output:
+// 1 2 3 4 5
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void num(int N){
+//     if(N==0)
+//         return;
+
+      
+//         num(N-1);
+//         cout<<N;
+// }
+// int main(){
+//     cout<<"here your answr:->";
+//     num(5);
+// }
 
 // Q3. Sum of First N Numbers
 // Write a recursive function:
