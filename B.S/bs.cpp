@@ -93,6 +93,23 @@
 // 10 20 30 40
 
 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void travse(int arr[] , int n , int index){
+//     if(index==n){
+//         return ;
+//     }
+//        cout<<arr[index]<<endl;
+//        travse(arr , n , index+1 );
+// }
+// int main(){
+//     cout<<"here your answr:->";
+//     int arr[] = {10, 20, 30, 40, 50};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     travse(arr ,n,0);
+// }
+
 // Q6. Sum of Array
 
 // Write a recursive function:
