@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -9,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/SHUBHANSHU/Desktop/DSA/Subarray",
-      "program": "c:/Users/SHUBHANSHU/Desktop/DSA/Subarray/build/Debug/outDebug",
+      "cwd": "c:/Users/SHUBHANSHU/Desktop/DSA/two_pointers",
+      "program": "c:/Users/SHUBHANSHU/Desktop/DSA/two_pointers/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
